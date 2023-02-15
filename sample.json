@@ -1,5 +1,29 @@
 [
     {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
         "power": 1000,
         "speed": 1
     },
@@ -54,5 +78,29 @@
     {
         "power": 1500,
         "speed": 70
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
+    },
+    {
+        "power": 0,
+        "speed": 0
     }
 ]

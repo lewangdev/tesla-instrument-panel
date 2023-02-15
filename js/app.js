@@ -416,24 +416,29 @@ var SpeedDial = React.createClass({
         ),
         document.body
     );
-    var currentIdx = 0;
-    var maxLength = 0;
-    function feedData(data, i) {
-        console.log(data[i])
-        v = data[i]
-        pubsub.pub('speed', { speed: v.speed });
-        pubsub.pub('power', { power: v.power });
+
+    function test() {
+        var currentIdx = 0;
+        var maxLength = 0;
+        function feedData(data, i) {
+            console.log(data[i])
+            v = data[i]
+            pubsub.pub('speed', { speed: v.speed });
+            pubsub.pub('power', { power: v.power });
 
 
-        currentIdx = i + 1;
-        setTimeout(feedData, 1000, data, currentIdx % maxLength);
+            currentIdx = i + 1;
+            setTimeout(feedData, 1000, data, currentIdx % maxLength);
+        }
+
+        fetch('/sample.json')
+            .then(response => response.json())
+            .then(data => {
+                maxLength = data.length;
+                setTimeout(feedData, 500, data, currentIdx);
+            });
     }
 
-    fetch('/sample.json')
-        .then(response => response.json())
-        .then(data => {
-            maxLength = data.length;
-            setTimeout(feedData, 1000, data, currentIdx);
-        });
+    test();
 })(window);
 
