@@ -417,7 +417,7 @@ var SpeedDial = React.createClass({
         document.body
     );
 
-    function test() {
+    function testSample() {
         var currentIdx = 0;
         var maxLength = 0;
         function feedData(data, i) {
@@ -439,6 +439,23 @@ var SpeedDial = React.createClass({
             });
     }
 
-    test();
+    function useMqtt() {
+        const mqttc = mqtt.connect("ws://192.168.52.164:10883/mqtt", { "username": "", "password": "" });
+        mqttc.subscribe("teslamate/cars/1/power");
+        mqttc.subscribe("teslamate/cars/1/speed");
+        mqttc.on("message", function (topic, payload) {
+            if (topic == "teslamate/cars/1/power") {
+                var value = JSON.parse(payload);
+                pubsub.pub('power', { power: value });
+            } else if (topic == "teslamate/cars/1/speed") {
+                var value = JSON.parse(payload);
+                pubsub.pub('speed', { speed: value });
+            }
+        });
+    }
+
+    testSample();
+
+    //useMqtt();
 })(window);
 
