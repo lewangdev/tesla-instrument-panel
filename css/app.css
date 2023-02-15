@@ -1,0 +1,9 @@
+.power {
+    position: relative;
+    float:left;
+}
+.speed {
+    position: relative;
+    float:left;
+    margin-left:50px;
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "power": 1000,
+        "speed": 1
+    },
+    {
+        "power": 2000,
+        "speed": 10
+    },
+    {
+        "power": -2100,
+        "speed": 30
+    },
+    {
+        "power": 3000,
+        "speed": 80
+    },
+    {
+        "power": 2000,
+        "speed": 100
+    },
+    {
+        "power": 2500,
+        "speed": 120
+    },
+    {
+        "power": 1500,
+        "speed": 70
+    },
+    {
+        "power": 1000,
+        "speed": 1
+    },
+    {
+        "power": 2000,
+        "speed": 10
+    },
+    {
+        "power": 2100,
+        "speed": 30
+    },
+    {
+        "power": 3000,
+        "speed": 80
+    },
+    {
+        "power": 2000,
+        "speed": 100
+    },
+    {
+        "power": 2500,
+        "speed": 120
+    },
+    {
+        "power": 1500,
+        "speed": 70
+    }
+]
