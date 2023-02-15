@@ -133,7 +133,7 @@ var Pointer = {
      * 瞬时能耗转成弧度
      */
     pow2angle: function (power) {
-        var max = 8000, min = 0;
+        var max = 5000, min = -5000;
         power = power > max ? max : power < min ? min : power;
         if (power == max)
             return 288 * Math.PI / 180;

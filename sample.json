@@ -12,15 +12,15 @@
         "speed": 30
     },
     {
-        "power": 3000,
+        "power": -3000,
         "speed": 80
     },
     {
-        "power": 2000,
+        "power": -2000,
         "speed": 100
     },
     {
-        "power": 2500,
+        "power": -2500,
         "speed": 120
     },
     {
@@ -36,7 +36,7 @@
         "speed": 10
     },
     {
-        "power": 2100,
+        "power": -2100,
         "speed": 30
     },
     {
